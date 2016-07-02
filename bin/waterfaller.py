@@ -282,7 +282,7 @@ def main():
         # Filterbank file
         filetype = "filterbank"
         rawdatafile = filterbank.filterbank(fn)
-    if fn.endswith(".fits"):
+    elif fn.endswith(".fits"):
         # PSRFITS file
         filetype = "psrfits"
         rawdatafile = psrfits.PsrfitsFile(fn)
